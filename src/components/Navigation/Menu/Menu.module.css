@@ -1,3 +1,16 @@
-.Toolbar {
+.Menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 
+.Menu li {
+    display: inline;
+    margin: 5px;
+}
+
+.Menu a {
+    text-decoration: none;
+    color: #61dafb;
+    text-transform: uppercase;
 }

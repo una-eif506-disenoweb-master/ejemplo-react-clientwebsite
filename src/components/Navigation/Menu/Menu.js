@@ -1,12 +1,33 @@
 import React from 'react';
-import styles from './Toolbar.module.css';
+import styles from './Menu.module.css';
 import {Row, Col}  from 'react-bootstrap';
 
-const toolbar = (props) => (
-    <Row className={styles.Toolbar}>
-        <Col sm={4}>LOGO</Col>
-        <Col sm={4}>MENU</Col>
-    </Row>
-);
+const menu = (props) => {
+    const mainStyle = {
+        textAlign: 'right',
+        marginTop: '80px',
+        fontSize: '1.3em'
+    };
 
-export default toolbar;
+    const footerStyle = {
+        textAlign: 'left',
+        marginTop: '0',
+        fontSize: '1.3em'
+    };
+
+    let style = (props.mainMenu ? mainStyle : footerStyle);
+
+    return (
+        <Row className={styles.Menu} style={style}>
+            <Col>
+                <ul>
+                    <li><a href='/'>Inicio</a></li>
+                    <li>|</li>
+                    <li><a href='/clientes'>Clientes</a></li>
+                </ul>
+            </Col>
+        </Row>
+    );
+};
+
+export default menu;

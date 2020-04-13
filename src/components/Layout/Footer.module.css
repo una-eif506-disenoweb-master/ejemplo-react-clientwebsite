@@ -1,0 +1,14 @@
+.Footer {
+    border-top: 1px solid black;
+    margin-top: 40px;
+}
+
+.Author {
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+
+.Author p, a {
+    font-size: 0.8em;
+    margin: 0;
+}

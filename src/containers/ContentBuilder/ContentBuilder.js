@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
 import Aux from '../../hoc/Aux'
+import Article from "../../components/Article/Article";
 
-class ClientBuilder extends Component {
+class ContentBuilder extends Component {
     render() {
         return (
             <Aux>
-                <div>Burger</div>
-                <div>Build Controls</div>
+                <Article/>
+                <div>CLIENTS</div>
             </Aux>
         );
     }
 }
 
-export default ClientBuilder;
+export default ContentBuilder;
