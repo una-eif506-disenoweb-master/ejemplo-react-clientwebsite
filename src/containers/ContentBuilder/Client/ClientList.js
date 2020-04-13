@@ -18,8 +18,9 @@ class ClientList extends Component {
     }
 
     render() {
-        const clients = this.state.clients.map(client => {
-            return <Client name={client.name} username={client.username} email={client.email} />
+        const clients = this.state.clients.map((client, index) => {
+            return <Client key={index} id={client.id} name={client.name}
+                           username={client.username} email={client.email} />
         });
         return (
             <Aux>
