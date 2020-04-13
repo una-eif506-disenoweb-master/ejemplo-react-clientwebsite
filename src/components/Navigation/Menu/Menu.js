@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Menu.module.css';
 import {Row, Col}  from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const menu = (props) => {
     const mainStyle = {
@@ -21,9 +22,9 @@ const menu = (props) => {
         <Row className={styles.Menu} style={style}>
             <Col>
                 <ul>
-                    <li><a href='/'>Inicio</a></li>
+                    <li><Link to='/'>Inicio</Link></li>
                     <li>|</li>
-                    <li><a href='/clientes'>Clientes</a></li>
+                    <li><Link to='/clientes'>Clientes</Link></li>
                 </ul>
             </Col>
         </Row>

@@ -19,6 +19,7 @@ const footer = (props) => (
                 <div>
                     <a href='www.mike.education'>www.mike.education</a>
                 </div>
+                <p>ReactJS "react-scripts": "3.4.1"</p>
                 <p>Universidad Nacional de Costa Rica</p>
             </Col>
         </Row>
