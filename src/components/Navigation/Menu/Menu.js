@@ -1,19 +1,17 @@
 import React from 'react';
 import styles from './Menu.module.css';
-import {Row, Col}  from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import {Row, Col, ButtonGroup, Button}  from 'react-bootstrap';
+import { LinkContainer } from 'react-router-bootstrap'
 
 const menu = (props) => {
     const mainStyle = {
         textAlign: 'right',
-        marginTop: '80px',
-        fontSize: '1.3em'
+        marginTop: '2em'
     };
 
     const footerStyle = {
         textAlign: 'left',
-        marginTop: '0',
-        fontSize: '1.3em'
+        marginTop: '1em'
     };
 
     let style = (props.mainMenu ? mainStyle : footerStyle);
@@ -21,11 +19,14 @@ const menu = (props) => {
     return (
         <Row className={styles.Menu} style={style}>
             <Col>
-                <ul>
-                    <li><Link to='/'>Inicio</Link></li>
-                    <li>|</li>
-                    <li><Link to='/clientes'>Clientes</Link></li>
-                </ul>
+                <ButtonGroup aria-label="Menu Principal" size='lg' className='mb-2'>
+                    <LinkContainer to="/">
+                        <Button>Inicio</Button>
+                    </LinkContainer>
+                    <LinkContainer to="/clientes">
+                        <Button>Clientes</Button>
+                    </LinkContainer>
+                </ButtonGroup>
             </Col>
         </Row>
     );

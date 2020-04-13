@@ -10,7 +10,7 @@ const header = (props) => (
             <img src={ Logo } alt= 'Clientes' className={styles.Logo} />
         </Col>
         <Col sm={8}>
-            <Menu mainMenu={true}/>
+            <Menu mainMenu={true} />
         </Col>
     </Row>
 );
